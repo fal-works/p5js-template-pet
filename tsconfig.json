@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    // emitting JS files
+    "outDir": "dist",
+    "noEmitOnError": true,
+
+    // output kind
+    "target": "ES2015",
+    "module": "None",
+
+    // checking syntax
+    "strict": true,
+    "noImplicitReturns": true,
+
+    // formatting
+    "newLine": "LF",
+
+    // types to include in compilation
+    "types": ["p5/global"]
+  },
+  "include": ["src"]
+}

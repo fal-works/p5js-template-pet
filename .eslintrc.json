@@ -1,0 +1,38 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "p5js/p5": true
+  },
+  "plugins": ["p5js"],
+  "extends": ["eslint:recommended", "plugin:p5js/p5", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.ts"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    },
+    {
+      "files": ["dist/*.js"],
+      "globals": {
+        "p5": "readonly"
+      },
+      "rules": {
+        "lines-around-comment": "error"
+      }
+    },
+    {
+      "files": ["util/**/*.js"]
+    }
+  ]
+}
