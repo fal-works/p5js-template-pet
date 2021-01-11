@@ -1,4 +1,4 @@
-# p5.js template 2-B
+# p5.js Template 2A
 
 Template project for [p5.js](https://p5js.org/) sketches using [Visual Studio Code](https://code.visualstudio.com/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [TypeScript](https://www.typescriptlang.org/) and related plugins.
 
