@@ -49,7 +49,7 @@ Template project for [p5.js](https://p5js.org/) sketches using [Visual Studio Co
 
 ### ESLint plugins
 
+- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser)
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
-- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
-- [eslint-plugin-p5js](https://www.npmjs.com/package/eslint-plugin-p5js)
+- [@fal-works/eslint-config-p5js](https://www.npmjs.com/package/@fal-works/eslint-config-p5js)

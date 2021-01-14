@@ -1,38 +1,51 @@
 {
   "env": {
     "es6": true,
-    "browser": true,
-    "p5js/p5": true
+    "browser": true
   },
-  "plugins": ["p5js"],
-  "extends": ["eslint:recommended", "plugin:p5js/p5", "prettier"],
   "parserOptions": {
     "ecmaVersion": 6
   },
+  "extends": [
+    // basic recommended rules
+    "eslint:recommended",
+
+    // turn off rules that might conflict with prettier
+    "prettier"
+  ],
+
   "overrides": [
     {
       "files": ["src/**/*.ts"],
-      "extends": [
-        "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint"
-      ],
       "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint"],
+      "extends": [
+        // overwrite config for p5.js
+        "@fal-works/p5js",
+
+        // recommended rules for TypeScript
+        "plugin:@typescript-eslint/recommended",
+
+        // overwrite config of @typescript-eslint for p5.js
+        "@fal-works/p5js/@typescript-eslint",
+
+        // turn off rules of @typescript-eslint that might conflict with prettier
+        "prettier/@typescript-eslint"
+      ],
       "rules": {
         "@typescript-eslint/no-explicit-any": "off"
       }
     },
     {
-      "files": ["dist/*.js"],
-      "globals": {
-        "p5": "readonly"
-      },
+      "files": ["dist/**/*.js"],
+      "extends": [
+        // overwrite config for p5.js
+        "@fal-works/p5js"
+      ],
       "rules": {
-        "lines-around-comment": "error"
+        "lines-around-comment": "error",
+        "@typescript-eslint/triple-slash-reference": "error"
       }
-    },
-    {
-      "files": ["util/**/*.js"]
     }
   ]
 }
