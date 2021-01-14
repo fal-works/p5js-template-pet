@@ -12,7 +12,7 @@ Template project for creating [p5.js](https://p5js.org/) sketches using the foll
     - [Visual Studio Code](https://code.visualstudio.com/)
     - [Node.js](https://nodejs.org/)
 
-2. Create a project by copying this template, then open it with VS Code.
+2. Create your project folder by copying this template, then open it with VS Code.
 
 3. Run the command-line below, which will install several dependencies:
 
