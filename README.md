@@ -1,6 +1,9 @@
-# p5.js Template 2A
+# p5.js Template PET
 
-Template project for [p5.js](https://p5js.org/) sketches using [Visual Studio Code](https://code.visualstudio.com/), [ESLint](https://eslint.org/) (+ plugins), [Prettier](https://prettier.io/) and [TypeScript](https://www.typescriptlang.org/).
+Template project for creating [p5.js](https://p5js.org/) sketches using the following tools:
+
+- Code editor: [Visual Studio Code](https://code.visualstudio.com/)
+- Other tools: [Prettier](https://prettier.io/), [ESLint](https://eslint.org/) (+ plugins) and [TypeScript](https://www.typescriptlang.org/).
 
 ## Usage
 
@@ -10,13 +13,11 @@ Template project for [p5.js](https://p5js.org/) sketches using [Visual Studio Co
 
 2. Create a project by copying this template, then open it with VS Code.
 
-3. Run the command-line below:
+3. Run the command-line below, which will install several dependencies:
 
     ```shell
     npm install
     ```
-
-    This will install several dependencies (see above).
 
 4. Install the VS Code extensions:
     - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -39,8 +40,8 @@ Template project for [p5.js](https://p5js.org/) sketches using [Visual Studio Co
 
 ### Important ones
 
-- [ESLint](https://www.npmjs.com/package/eslint)
 - [Prettier](https://www.npmjs.com/package/prettier)
+- [ESLint](https://www.npmjs.com/package/eslint)
 - [TypeScript](https://www.npmjs.com/package/typescript)
 
 ### Type definitions
