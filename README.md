@@ -3,7 +3,8 @@
 Template project for creating [p5.js](https://p5js.org/) sketches using the following tools:
 
 - Code editor: [Visual Studio Code](https://code.visualstudio.com/)
-- Other tools: [Prettier](https://prettier.io/), [ESLint](https://eslint.org/) (+ plugins) and [TypeScript](https://www.typescriptlang.org/).
+- Other tools: [Prettier](https://prettier.io/), [ESLint](https://eslint.org/) and [TypeScript](https://www.typescriptlang.org/).
+
 
 ## Usage
 
@@ -28,6 +29,7 @@ Template project for creating [p5.js](https://p5js.org/) sketches using the foll
     Now ESLint and Prettier works automatically every time you save your code.
 
 5. Feel free to edit `src/script.ts`.
+
 6. Run the command-line below to build `dist/script.js`:
 
     ```shell
@@ -35,6 +37,7 @@ Template project for creating [p5.js](https://p5js.org/) sketches using the foll
     ```
 
 7. Open `dist/index.html` to see the result.
+
 
 ## Dependencies (npm)
 
@@ -48,7 +51,7 @@ Template project for creating [p5.js](https://p5js.org/) sketches using the foll
 
 - [@types/p5](https://www.npmjs.com/package/@types/p5)
 
-### ESLint plugins
+### For ESLint
 
 - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser)
