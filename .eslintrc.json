@@ -43,8 +43,7 @@
         "@fal-works/p5js"
       ],
       "rules": {
-        "lines-around-comment": "error",
-        "@typescript-eslint/triple-slash-reference": "error"
+        "lines-around-comment": "error"
       }
     }
   ]
