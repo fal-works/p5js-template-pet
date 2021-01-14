@@ -12,7 +12,8 @@
   },
   "private": true,
   "scripts": {
-    "build": "tsc && npm run lint:dist && npm run format:dist",
+    "build": "npm run transpile && npm run lint:dist && npm run format:dist",
+    "transpile": "tsc --skipLibCheck",
     "lint:dist": "eslint --fix dist/*.js",
     "format:dist": "prettier --write dist/*.js"
   }
