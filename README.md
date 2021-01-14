@@ -1,6 +1,6 @@
 # p5.js Template 2A
 
-Template project for [p5.js](https://p5js.org/) sketches using [Visual Studio Code](https://code.visualstudio.com/), [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [TypeScript](https://www.typescriptlang.org/) and related plugins.
+Template project for [p5.js](https://p5js.org/) sketches using [Visual Studio Code](https://code.visualstudio.com/), [ESLint](https://eslint.org/) (+ plugins), [Prettier](https://prettier.io/) and [TypeScript](https://www.typescriptlang.org/).
 
 ## Usage
 
@@ -27,7 +27,7 @@ Template project for [p5.js](https://p5js.org/) sketches using [Visual Studio Co
     Now ESLint and Prettier works automatically every time you save your code.
 
 5. Feel free to edit `src/script.ts`.
-6. Run the command-line below to generate `dist/script.js`:
+6. Run the command-line below to build `dist/script.js`:
 
     ```shell
     npm run build

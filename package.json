@@ -1,6 +1,5 @@
 {
   "license": "CC0-1.0",
-  "private": true,
   "devDependencies": {
     "@fal-works/eslint-config-p5js": "^1.0.0",
     "@types/p5": "^0.9.1",
@@ -11,6 +10,7 @@
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   },
+  "private": true,
   "scripts": {
     "build": "tsc && npm run lint:dist && npm run format:dist",
     "lint:dist": "eslint --fix dist/*.js",

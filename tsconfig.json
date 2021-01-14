@@ -1,4 +1,6 @@
 {
+  "include": ["src"],
+
   "compilerOptions": {
     // emitting JS files
     "outDir": "dist",
@@ -17,6 +19,5 @@
 
     // types to include in compilation
     "types": ["p5/global"]
-  },
-  "include": ["src"]
+  }
 }
