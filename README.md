@@ -5,6 +5,8 @@ Template project for creating [p5.js](https://p5js.org/) sketches using the foll
 - Code editor: [Visual Studio Code](https://code.visualstudio.com/)
 - Other tools: [Prettier](https://prettier.io/), [ESLint](https://eslint.org/) and [TypeScript](https://www.typescriptlang.org/).
 
+See also [other templates](https://fal-works.github.io/p5js-templates/).
+
 
 ## Usage
 
