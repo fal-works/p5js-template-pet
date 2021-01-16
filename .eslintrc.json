@@ -20,9 +20,6 @@
       "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint"],
       "extends": [
-        // overwrite config for p5.js
-        "@fal-works/p5js",
-
         // recommended rules for TypeScript
         "plugin:@typescript-eslint/recommended",
 
