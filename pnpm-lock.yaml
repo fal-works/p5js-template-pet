@@ -538,7 +538,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
-  /fast-glob/3.2.4:
+  /fast-glob/3.2.5:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
       '@nodelib/fs.walk': 1.2.6
@@ -550,7 +550,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-kr/Oo6PX51265qeuCYsyGypiO5uJFgBS0jksyG7FUeCyQzNwYnzrNIMR1NXfkZXsMYXYLRAHgISHBz8gQcxKHQ==
+      integrity: sha512-2DtFcgT68wiTTiwZ2hNdJfcHNke9XOfnwmBRWXhmeKM8rF0TGwmC/Qto3S7RoZKp5cilZbxzO5iTNTQsJ+EeDg==
   /fast-json-stable-stringify/2.1.0:
     dev: true
     resolution:
@@ -633,7 +633,7 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.4
+      fast-glob: 3.2.5
       ignore: 5.1.8
       merge2: 1.4.1
       slash: 3.0.0
