@@ -1,32 +1,38 @@
 {
-  "env": {
-    "es6": true,
-    "browser": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 6
-  },
-  "extends": [
-    // basic recommended rules
-    "eslint:recommended",
+  "ignorePatterns": ["/tsc-out/", "/dist/"],
 
-    // turn off rules that might conflict with prettier
-    "prettier"
-  ],
+  // config common to all
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true
+  },
 
   "overrides": [
+    // config for TypeScript
     {
       "files": ["src/**/*.ts"],
-      "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 6
+      },
+      "env": { "browser": true },
       "extends": [
+        // basic recommended rules
+        "eslint:recommended",
+
+        // turn off rules that might conflict with Prettier
+        "prettier",
+
         // recommended rules for TypeScript
         "plugin:@typescript-eslint/recommended",
 
         // overwrite config of @typescript-eslint for p5.js
         "@fal-works/p5js/@typescript-eslint",
 
-        // turn off rules of @typescript-eslint that might conflict with prettier
+        // turn off rules of @typescript-eslint that might conflict with Prettier
         "prettier/@typescript-eslint"
       ],
       "rules": {
@@ -34,14 +40,15 @@
         "@typescript-eslint/no-explicit-any": "off" // this rule is a little too strict if using p5.js
       }
     },
+
+    // config for distribution code, just for pre-formatting purpose
     {
-      "files": ["dist/**/*.js"],
-      "extends": [
-        // overwrite config for p5.js
-        "@fal-works/p5js"
-      ],
+      "files": ["dist/*.js"],
       "rules": {
-        "lines-around-comment": "error"
+        "lines-around-comment": [
+          "error",
+          { "beforeBlockComment": true, "beforeLineComment": true }
+        ]
       }
     }
   ]
