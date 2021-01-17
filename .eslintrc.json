@@ -7,15 +7,14 @@
   },
 
   "overrides": [
-    // config for TypeScript
+    // config for source code in TypeScript
     {
       "files": ["src/**/*.ts"],
       "plugins": ["@typescript-eslint"],
       "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-        "ecmaVersion": 6
+      "env": {
+        "browser": true
       },
-      "env": { "browser": true },
       "extends": [
         // basic recommended rules
         "eslint:recommended",
@@ -38,12 +37,9 @@
       }
     },
 
-    // config for distribution code, just for pre-formatting purpose
+    // config just for pre-formatting purpose
     {
-      "files": ["dist/*.js"],
-      "parserOptions": {
-        "sourceType": "module"
-      },
+      "files": ["**/*.js"],
       "rules": {
         "lines-around-comment": [
           "error",
