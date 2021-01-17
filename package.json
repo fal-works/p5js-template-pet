@@ -13,7 +13,7 @@
   "private": true,
   "scripts": {
     "build": "npm run transpile && npm run lint:dist && npm run format:dist",
-    "transpile": "tsc --skipLibCheck",
+    "transpile": "tsc",
     "lint:dist": "eslint --fix dist/*.js",
     "format:dist": "prettier --write dist/*.js"
   }

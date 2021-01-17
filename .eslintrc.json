@@ -30,7 +30,8 @@
         "prettier/@typescript-eslint"
       ],
       "rules": {
-        "@typescript-eslint/no-explicit-any": "off"
+        "no-fallthrough": "off", // already checked by TypeScript
+        "@typescript-eslint/no-explicit-any": "off" // this rule is a little too strict if using p5.js
       }
     },
     {

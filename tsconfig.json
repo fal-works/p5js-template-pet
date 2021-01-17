@@ -1,23 +1,27 @@
+// See also: https://aka.ms/tsconfig.json
 {
   "include": ["src"],
 
   "compilerOptions": {
-    // emitting JS files
-    "outDir": "dist",
-    "noEmitOnError": true,
-
-    // output kind
+    /* Basic Options */
     "target": "ES2015",
     "module": "None",
+    "outDir": "dist",
 
-    // checking syntax
+    /* Strict Type-Checking Options */
     "strict": true,
+
+    /* Additional Checks */
     "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
 
-    // formatting
-    "newLine": "LF",
+    /* Module Resolution Options */
+    "types": ["p5/global"],
 
-    // types to include in compilation
-    "types": ["p5/global"]
+    /* Advanced Options */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true
   }
 }
