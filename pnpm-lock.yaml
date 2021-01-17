@@ -1,5 +1,5 @@
 devDependencies:
-  '@fal-works/eslint-config-p5js': 1.0.1_eslint@7.18.0
+  '@fal-works/eslint-config-p5js': 1.0.3_eslint@7.18.0
   '@types/p5': 0.9.1
   '@typescript-eslint/eslint-plugin': 4.13.0_f3178e4628777c9e52e8278f98ca1f2d
   '@typescript-eslint/parser': 4.13.0_eslint@7.18.0+typescript@4.1.3
@@ -44,14 +44,14 @@ packages:
       node: ^10.12.0 || >=12.0.0
     resolution:
       integrity: sha512-1JTKgrOKAHVivSvOYw+sJOunkBjUOvjqWk1DPja7ZFhIS2mX/4EgTT8M7eTK9jrKhL/FvXXEbQwIs3pg1xp3dg==
-  /@fal-works/eslint-config-p5js/1.0.1_eslint@7.18.0:
+  /@fal-works/eslint-config-p5js/1.0.3_eslint@7.18.0:
     dependencies:
       eslint: 7.18.0
     dev: true
     peerDependencies:
       eslint: '>= 7'
     resolution:
-      integrity: sha512-oh/TDTTudDnyuOuiK7cYhP0ullzz1Wc48ZN1vRw429SwwPDfV6URtxM5iN6llKOopaKCkDJ4B/7+eFFtgoZb7A==
+      integrity: sha512-iP2EnvEXywEety3gsMf9/yAJ5ovLHgGGlnoQcv+ooNxrVPo6BX/QuCYOIMd1cN9Fz0Gd1sjzcgMg0yg65kcleQ==
   /@nodelib/fs.scandir/2.1.4:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
@@ -1084,7 +1084,7 @@ packages:
     resolution:
       integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 specifiers:
-  '@fal-works/eslint-config-p5js': ^1.0.1
+  '@fal-works/eslint-config-p5js': ^1.0.3
   '@types/p5': ^0.9.1
   '@typescript-eslint/eslint-plugin': ^4.13.0
   '@typescript-eslint/parser': ^4.13.0
